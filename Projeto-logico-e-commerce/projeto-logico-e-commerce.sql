@@ -63,8 +63,16 @@ values (2,2,'rua pedro marques 621', '100'),
   values (1,1, '100', default),
   (2,2, '70', default),
   (3,3, '50', default);
-
   select * from produto_pedido;
+  
+  desc vendedor;
+  insert into vendedor (idVendedor, Razao_social, Nome_fantasia, CPF, CNPJ, Endereco, contato)
+  values (1,'Projetos & negocios','Produto ltda Brasil1' , '124578963214', '357849652149758', 'rua aristides lobo 1018 centro São Minguel/SP', '01132859647'),
+   (2,'Esporte Stor', 'espaço e lazer', '55896548747', '4575656598', 'rua  Braz 1012 Votoratim/SP','0159974578'),
+    (3,'Innovação tech', 'Mundo tecnologico', '126987456354', '455789632945824', 'rua ari de souza 4554 Ipiranga/SP','05132458791');
+
+  select * from vendedor;
+
   
   -- tabela produtos_vendedor
   desc produtos_vendedor;
@@ -115,18 +123,6 @@ values (1,'Estação Esport', 'rua campos salles 1414, Centro-Itapetinga/SP'),
  (3,'Mundo Kids ', 'rua copacabana 4541 Rio de Janeiro/RJ');
 
 select * from distribuidora;
-
- -- tabela vendedor
-  desc vendedor;
-  insert into vendedor (idVendedor, Razao_social, Nome_fantasia, CPF, CNPJ, Endereco, contato)
-  values (1,'Projetos & negocios','Produto ltda Brasil1' , '124578963214', '357849652149758', 'rua aristides lobo 1018 centro São Minguel/SP', '01132859647'),
-   (2,'Esporte Stor', 'espaço e lazer', '55896548747', '4575656598', 'rua  Braz 1012 Votoratim/SP','0159974578'),
-    (3,'Innovação tech', 'Mundo tecnologico', '126987456354', '455789632945824', 'rua ari de souza 4554 Ipiranga/SP','05132458791');
-
-  select * from vendedor;
-
-
--- tabela produto_fornecedor.
 desc produto_fornecedor;
 select * from  produto_fornecedor;
 
